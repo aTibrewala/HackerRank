@@ -1,0 +1,28 @@
+/*
+ * @author: Alok Tibrewala
+ */
+
+package string;
+
+import java.util.Scanner;
+
+public class JavaStringIntroduction {
+public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        System.out.println(A.length()+B.length());
+        
+        if(B.compareTo(A) < 0){
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+        String capsA = (A.charAt(0)+"").toUpperCase();
+        String capsB = (B.charAt(0)+"").toUpperCase();
+        System.out.println(capsA+A.substring(1)+" "+capsB+B.substring(1));
+        
+    }
+}
